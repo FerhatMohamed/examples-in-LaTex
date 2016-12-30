@@ -1,0 +1,35 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% File  : capa
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Limpa os estilos de página
+  \thispagestyle{empty}
+
+% Desenho no fundo da página
+  \ThisCenterWallPaper{1}{img/CapaTR3.pdf}
+
+% Cria uma mini-página para inserir os dados da capa usando 70% da largura do texto
+  \begin{flushright}
+
+    \begin{minipage}{0.6\textwidth}
+      \begin{flushleft}
+          \sffamily
+          % Parte superior da capa
+          \vspace{2cm}
+          \LARGE \textbf{\rttipo} \\
+          \footnotesize \textcolor{black!60}{\rtid} \\[2cm]
+          \Huge \textbf{\rttitulo} \\
+      \end{flushleft}
+    \end{minipage}%
+
+    \vfill
+    \begin{minipage}{0.6\textwidth}
+        \begin{center}
+          % Rodapé da capa
+          \sffamily
+          \small \rtlocal \\
+          Versão \rtversao \\
+          \rtdata \\
+        \end{center}
+    \end{minipage}%
+  \end{flushright}

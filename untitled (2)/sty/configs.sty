@@ -1,0 +1,120 @@
+%% =======================================================================================
+%% 
+%% Plano de Trabalho CPAI
+%% 
+%% Arquivo para carregar pacotes e configurações
+%% 
+%% configs.sty
+%% 
+%% =======================================================================================
+
+% ----------------------------------------------------------------------------------------
+% - PACOTES FUNDAMENTAIS
+  \usepackage{lmodern}			            % Usa a fonte Latin Modern
+  \usepackage{cmap}                     % Acentuação correta no pdf
+  \usepackage[T1]{fontenc}		          % Selecao de codigos de fonte.
+  \usepackage[utf8]{inputenc}		        % Codificacao do documento (conversão automática dos acentos)
+  \usepackage{indentfirst}		          % Indenta o primeiro parágrafo de cada seção.
+  \usepackage[usenames,
+              dvipsnames]{color} 		    % Letras coloridas
+  \usepackage[usenames,
+              dvipsnames,
+              svgnames,
+              table]{xcolor}  					% Letras coloridas
+  \usepackage{graphicx}		 	            % Inclusão de gráficos
+  \usepackage{amsmath,
+              amssymb,
+              amsfonts,
+              textcomp}	                % Essencial para colocar funções e outros símbolos matemáticos
+  \usepackage{microtype} 	  		        % Para melhorias de justificação
+  \usepackage{xspace}                   % Insere automaticamente um espaço após um comando ou palavra-chave (para evitar o \ após comandos)
+  \usepackage{lscape}                   % Páginas em orientação paisagem
+  \usepackage{lastpage}                 % Identifica a numeração da última página do documento
+  \usepackage{booktabs}				          % Melhora a qualidade das tabelas
+  \usepackage{multicol}                 % Permite multiplas colunas
+  \usepackage{multirow}                 % Tabelas em múltiplas linhas
+  \usepackage{longtable}                % Tabelas em múltiplas páginas
+  \usepackage{float}                    % Melhora a flutuação de objetos
+  \usepackage{wallpaper}                % Permite usar imagens como marca d'água
+  \usepackage{pdfpages}                 % Permite incluir arquivos PDF no documento
+  \usepackage{tikz}                     % Para desenhos, traços, linhas etc.
+  \usepackage[export]{adjustbox}		% Para desenhar frame ao redor das figuras
+  \usepackage{verbatim}                 % Para citação não formatada de código fonte
+  \usepackage{enumerate}        % Mais opções e simplicidade para o ambiente Enumerate
+  %\usepackage[pscoord]{eso-pic}         % Para inserção do copyright CPAI
+  \usepackage[brazilian,
+              hyperpageref]{backref}	% Paginas com as citações na bibl
+  \usepackage[alf]{abntex2cite}	        % Citações padrão ABNT
+  \usepackage{lipsum} 				    % para texto de preenchimento de exemplo
+% ----------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
+% - CONFIGURAÇÕES DE PACOTES
+  % Configurações do pacote backref
+  % Usado sem a opção hyperpageref de backref
+    \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+    % Texto padrão antes do número das páginas
+    \renewcommand{\backref}{}
+    % Define os textos da citação
+    \renewcommand*{\backrefalt}[4]{
+      \ifcase #1 %
+        Nenhuma citação no texto.%
+      \or
+        Citado na página #2.%
+      \else
+        Citado #1 vezes nas páginas #2.%
+      \fi
+    }%
+
+  % Configurações de aparência do PDF final
+    % Alterando o aspecto da cor azul
+      \definecolor{blue}{RGB}{41,5,195}
+
+    % Informações do PDF
+      \makeatletter
+      \hypersetup{
+          %pagebackref=true,
+          colorlinks=true,       		% false: boxed links; true: colored links
+          linkcolor=blue,          	% color of internal links
+          citecolor=blue,        		% color of links to bibliography
+          filecolor=magenta,      		% color of file links
+          urlcolor=blue,
+          bookmarksdepth=4
+      }
+      \makeatother
+
+  % Espaçamentos entre linhas e parágrafos 
+    % O tamanho do parágrafo é dado por:
+      \setlength{\parindent}{1.3cm}
+
+    % Controle do espaçamento entre um parágrafo e outro:
+      \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+  % Compila o index
+    \makeindex
+
+  % Definição de posicionamento da marca d'agua do CPAI
+    \newcommand{\placetextbox}[3]{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+        \setbox0=\hbox{#3}% Put <stuff> in a box
+        \AddToShipoutPictureFG{% Add <stuff> to current page foreground
+            \put(\LenToUnit{#1\paperwidth},\LenToUnit{#2\paperheight}){\vtop{{\null}\makebox[0pt][c]{#3}}}%
+        }%
+    }%
+
+  % Troca o símbolo do itemize para um '--'
+    \renewcommand{\labelitemi}{--}
+  
+  % Novo comando para citar ANEXOS
+    \newcommand{\refanexo}[1]{\hyperref[#1]{Anexo~\ref{#1}}}
+  
+  % Nova linha horizontal
+    \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+  
+  % Numeros ordinais
+    \newcommand{\ele}{\raise1ex\hbox{\underbar{\scriptsize o}}}
+    \newcommand{\ela}{\raise1ex\hbox{\underbar{\scriptsize a}}}
+  
+  % Para desenhar linha diagonal até o fim da página
+    \newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+
+% ----------------------------------------------------------------------------------------

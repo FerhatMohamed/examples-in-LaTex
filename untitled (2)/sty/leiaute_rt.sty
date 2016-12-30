@@ -1,0 +1,95 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%    File      : leiaute_rt.sty
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Margens da página
+  \setulmarginsandblock{3cm}{4cm}{*}
+  \setlrmarginsandblock{2.5cm}{2.5cm}{*}
+  \checkandfixthelayout
+
+% Altera o espaçamento entre o cabeçalho e o início do texto
+  \setlength{\headsep}{1.5cm}
+  %\addtolength{\textheight}{0.5cm}
+
+% Remove a indentação dos parágrafos
+  \setlength\parindent{0pt}
+
+% Cria novos estilos de cabeçalhos e rodapés
+  % Cabeçalhos para páginas pré-textuais
+    \makepagestyle{pretextual}
+      \makeevenhead{pretextual}
+        {}
+        {}
+        {\includegraphics[width=5cm]{img/assina_UnB_CPAI_A1_PB-1} }
+      
+      \makeoddhead{pretextual}
+        {}
+        {}
+        {\includegraphics[width=5cm]{img/assina_UnB_CPAI_A1_PB-1} }
+
+      \makeheadrule{pretextual}{\textwidth}{\normalrulethickness}
+
+    % Não há rodapés para páginas pré-textuais
+
+  % Cabeçalhos para páginas textuais e pós-textuais
+    \makepagestyle{textual}
+      \makeevenhead{textual}
+        {}
+        {}
+        {\includegraphics[width=5cm]{img/assina_UnB_CPAI_A1_PB-1} 
+        % Insere a o copyright CPAI
+        \placetextbox{0.95}{0.75}{\rotatebox{90}{\tiny \copyright\ \textit{copyright} \the\year\ CPAI -- Todos os direitos reservados}}}
+      
+      \makeoddhead{textual} %%pagina ímpar ou com oneside
+        {}
+        {}
+        {\includegraphics[width=5cm]{img/assina_UnB_CPAI_A1_PB-1} 
+        \placetextbox{0.95}{0.75}{\rotatebox{90}{\tiny \copyright\ \textit{copyright} \the\year\ CPAI -- Todos os direitos reservados}}}
+
+      \makeheadrule{textual}{\textwidth}{\normalrulethickness}
+
+  % Rodapés para páginas textuais
+    \makeevenfoot{textual}
+      {\sffamily \color{black!60} \tiny%
+          Campus Universitário Darcy Ribeiro, ICC Centro, Sala BSS-383, Brasília-DF \\[-0.1cm]
+          Tel: +55 61 3107-6322 | \href{http://www.cpai.unb.br}{www.cpai.unb.br} | \href{mailto:cpai@cpai.unb.br}{cpai@cpai.unb.br} }
+      {}
+      {\sffamily \color{black!60} \tiny%
+          Versão: \rtversao \\[-0.1cm]
+          Página \thepage\ de \pageref*{LastPage}}
+
+    \makeoddfoot{textual}
+      {\sffamily \color{black!60} \tiny%
+          Campus Universitário Darcy Ribeiro, ICC Centro, Sala BSS-383, Brasília-DF \\[-0.1cm]
+          Tel: +55 61 3107-6322 | \href{http://www.cpai.unb.br}{www.cpai.unb.br} | \href{mailto:cpai@cpai.unb.br}{cpai@cpai.unb.br} }
+      {}
+      {\sffamily \color{black!60} \tiny%
+          Versão: \rtversao \\[-0.1cm]
+          Página \thepage\ de \pageref*{LastPage}}
+
+    \makefootrule{textual}{\textwidth}{\normalrulethickness}{0cm}
+
+%----------------------------------------------------------------------
+%% Substitui os comandos \pretextual, \textual e \postextual
+%----------------------------------------------------------------------
+\let\oldpretextual\pretextual
+\renewcommand{\pretextual}{%
+  \oldpretextual%
+  \pagestyle{pretextual}%
+  \aliaspagestyle{chapter}{pretextual}
+  }
+
+\let\oldtextual\textual
+\renewcommand{\textual}{%
+  \oldtextual%
+  \pagestyle{textual}%
+  \aliaspagestyle{chapter}{textual}
+  }
+
+\let\oldpostextual\postextual
+\renewcommand{\postextual}{%
+  \oldpostextual%
+  \pagestyle{pretextual}%
+  \aliaspagestyle{chapter}{pretextual}
+  }
+

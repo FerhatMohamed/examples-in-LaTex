@@ -1,0 +1,26 @@
+\documentclass[11pt]{letter}
+
+\usepackage[french]{babel}
+\selectlanguage{french}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{blindtext}
+\name{nom de l'expéditeur}
+\address{adresse de l'expéditeur}
+\signature{signature de l'expéditeur}
+\date{date d'expédition} 
+
+\begin{document}
+\begin{letter}{nom du destinataire}
+\opening{formule de politesse (« adresse » : cher Monsieur, etc.)}
+
+%Corps de la lettre
+\blindtext
+
+\closing{formule de politesse (veuillez agréer, etc)}
+\ps{post-scriptum}
+\cc{nom des autres destinataires}
+\encl{pièces jointes}
+\end{letter}
+\end{document}

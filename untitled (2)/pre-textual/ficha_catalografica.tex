@@ -1,0 +1,60 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%    File      : ficha_catalografica
+%    Type      : TeX
+%    Date      : Time-stamp: <Sunday,10 Novem 2013,18:59:18>
+%
+%    Content   : 
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%----------------------------------------------------------------------
+% Ficha bibliografica
+%----------------------------------------------------------------------
+
+{
+\ABNTEXchapterfont\setlength{\parindent}{0cm}
+
+\vspace*{\fill} 
+
+{\tiny \copyright\ \textit{copyright} \the\year\ CPAI -- Todos os direitos reservados}
+
+%\imprimircassificacaoseguranca         % Não implementado nesta versão do modelo de RT
+
+\vspace*{\fill} % Posição vertical
+
+\begin{fichacatalografica}\ABNTEXchapterfont
+    \vspace*{\fill} % Posição vertical
+    \hrule % Linha horizontal
+    \begin{center} % Minipage Centralizado
+        \begin{minipage}[c]{13cm} % Largura
+            \hspace{0.5cm} \rttitulo\ / \rtautor. --
+            \imprimirlocal : Universidade de Brasília, \rtdata-
+            
+            \hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 29,7 cm.\\
+            
+            \hspace{0.5cm}
+            \parbox[t]{\textwidth}{\rttipo~--~\CPAI, \rtdata.}
+            
+            \hspace{0.5cm}
+            \parbox[t]{\textwidth}{Versão final.}\\
+            
+            \hspace{0.5cm}
+            \parbox[t]{\textwidth}{ISSN: \rtissn}\\
+            
+            \hspace{0.5cm}
+            1. \rtkeyworda
+            2. \rtkeywordb
+            %3. \rtkeywordc
+            I. Título
+
+            \begin{flushright}
+                 CDD \rtcdd
+            \end{flushright}
+        \end{minipage}
+    \end{center}
+    \hrule
+\end{fichacatalografica}
+
+\cleardoublepage
+}
+
+%----------------------------------------------------------------------

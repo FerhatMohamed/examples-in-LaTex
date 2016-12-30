@@ -1,0 +1,145 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.5 }
+
+\bibitem[Araujo 2015]{araujo:2015:classe_abnt2}
+\abntrefinfo{Araujo}{ARAUJO}{2015}
+{ARAUJO, L.~C. \emph{Classe ABNT2: Documentos técnicos e científicos
+  brasileiros compatíveis com as normas ABNT Vers\~ao 1.9.5}. 2015.
+Dispon{\'\i}vel em:
+  \url{http://mirrors.rit.edu/CTAN/macros/latex/contrib/abntex2/doc/abntex2.pdf}.
+  Acesso em: 29/09/2015.}
+
+\bibitem[Ara\'ujo 1986]{silva:master}
+\abntrefinfo{Ara\'ujo}{ARA\'UJO}{1986}
+{ARA\'UJO, U. A.~M.
+\emph{M\'ascaras inteiri{\c c}as Tuk\'una}: possibilidade de estudo de
+  artefatos de museu para o conhecimento do universo ind{\'\i}gena.
+102~f. Disserta\c{c}\~{a}o (Mestrado em Ci\^encias Sociais) --- Funda{\c c}\~ao
+  Escola de Sociologia Pol{\'\i}tica de S\~ao Paulo, S\~ao Paulo, 1986.}
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2000]{NBR6023:2000}
+\abntrefinfo{ABNT}{ABNT}{2000}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6023}:
+  Informa{\c c}\~ao e documenta{\c c}\~ao --- refer\^encias --- elabora{\c
+  c}\~ao.
+Rio de Janeiro, 2000. 22~p.}
+
+\bibitem[Barcelos 1998]{barcelos1998}
+\abntrefinfo{Barcelos}{BARCELOS}{1998}
+{BARCELOS, M.
+\emph{Ensaio tecnol\'ogico, bioqu{\'\i}mico e sensorial de soja e gandu
+  enlatados no est\'agio verde e matura{\c c}\~ao de colheita}.
+160~f. Tese (Doutorado em Nutri{\c c}\~ao) --- Faculdade de Engenharia de
+  Alimentos, Universidade Estadual de Campinas, Campinas, 1998.}
+
+\bibitem[Biblioteca Nacional {(Brasil)} 1985]{silva:tech}
+\abntrefinfo{Biblioteca Nacional {(Brasil)}}{BIBLIOTECA NACIONAL
+  {(Brasil)}}{1985}
+{BIBLIOTECA NACIONAL {(Brasil)}. \emph{Relat\'orio da diretoria-geral}: o ano
+  de 1984.
+Rio de Janeiro, 1985. 40~p.}
+
+\bibitem[Chen, Silva e Marra 1997]{silva:inbook}
+\abntrefinfo{Chen, Silva e Marra}{CHEN; SILVA; MARRA}{1997}
+{CHEN, R.~E.; SILVA, J.~S.; MARRA, M. A coloniza{\c c}\~ao da terra do
+  {T}ucuj\'us.
+In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Hist\'oria do Amap\'a, {1$^o$} grau}.
+  2. ed. Macap\'a: Valcan Editora, 1997. cap.~3, p. 15--24.}
+
+\bibitem[Cruvinel 1995]{cruvinel1989}
+\abntrefinfo{Cruvinel}{CRUVINEL}{1995}
+{EMBRAPA. {Unidade de Apoio, Pesquisa e Desenvolvimento de Instrumentação
+  Agropecu\'aria (S\~ao Carlos)}. Paulo~Estev{\~a}o Cruvinel. \emph{Medidor
+  digital multisensorial de temperatura para solos}. 1995. BR n. PI 8903105-9,
+  26 junho 1989, 30 maio 1995.}
+
+\bibitem[IBICT 1993]{silva:booklet}
+\abntrefinfo{IBICT}{IBICT}{1993}
+{IBICT. \emph{Manual de normas de editora{\c c}\~ao do {IBICT}}. 2. ed.
+  Bras{\'i}lia, DF, 1993. 41~p.}
+
+\bibitem[J\'anos 2005]{janos:2005:algpseudocode}
+\abntrefinfo{J\'anos}{J\'ANOS}{2005}
+{J\'ANOS, S. \emph{The algorithmicx package}. 2005.
+Dispon{\'\i}vel em:
+  \url{http://www.tug.org/texlive/Contents/live/texmf-dist/doc/latex/algorithmicx/algorithmicx.pdf}.
+  Acesso em: 29/03/2011.}
+
+\bibitem[Junior e Franco 1997]{cassagojr:1997:amslatex}
+\abntrefinfo{Junior e Franco}{JUNIOR; FRANCO}{1997}
+{JUNIOR, H.~C.; FRANCO, L.~C. \emph{AMS-Latex}. 1997.
+Dispon{\'\i}vel em: \url{http://www.icmc.usp.br/~sma/suporte/Ams-manual.pdf}.
+  Acesso em: 30/03/2011.}
+
+\bibitem[Maia e Silva 1999]{silva:inproceedings}
+\abntrefinfo{Maia e Silva}{MAIA; SILVA}{1999}
+{MAIA, J.; SILVA, J. Incorpora{\c c}\~ao do tempo em vida orientado a correr.
+  In:  9º SIMP\'OSIO BRASILEIRO DE BANCO DE DADOS, 1994, S\~ao Paulo.
+  \emph{Anais...} S\~ao Paulo: USP, 1999. p. 16--29.}
+
+\bibitem[Marra \textit{et al.} 2014]{artigo1}
+\abntrefinfo{Marra \textit{et al.}}{MARRA \textit{et al.}}{2014}
+{MARRA, M. \textit{et al.} Terapia de reabilita{\c c}\~ao psicossocial: uma
+  vida melhor.
+\emph{Revista de Terapia Ocupacional da Universidade de S\~ao Paulo}, v.~4,
+  n.~2, p. 37--48, 2014.}
+
+\bibitem[Marreco e Silva 1995]{silva:monography}
+\abntrefinfo{Marreco e Silva}{MARRECO; SILVA}{1995}
+{MARRECO, J.; SILVA, J.
+\emph{Reimplante das vias da boca}.
+51~f. Monografia (Especializa{\c c}\~ao) --- Faculdade de Odontologia,
+  Universidade Camilo Castelo Branco, S\~ao Paulo, 1995.}
+
+\bibitem[Mendon{\c c}a 2005]{mendonca:2005}
+\abntrefinfo{Mendon{\c c}a}{MENDON{\c C}A}{2005}
+{MENDON{\c C}A, L. M.~N. \emph{Guia para apresentação de trabalhos
+  acadêmicos na {UFG}}. Goiania: Editora UFG, 2005.}
+
+\bibitem[Mendon{\c c}a 2006]{mendonca:2006}
+\abntrefinfo{Mendon{\c c}a}{MENDON{\c C}A}{2006}
+{\underline{\ \ \ \ \ \ \ \ }. \emph{Guia para apresentação de trabalhos
+  acadêmicos na {UFG} 2}. Goiania: Editora UFG, 2006.}
+
+\bibitem[Moses 2006]{moses:2006:listings}
+\abntrefinfo{Moses}{MOSES}{2006}
+{MOSES, B. \emph{The Listings Package}. 2006.
+Dispon{\'\i}vel em:
+  \url{http://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf}.
+  Acesso em: 29/03/2011.}
+
+\bibitem[Sidnei e Maria 2009]{wazlawick:2009}
+\abntrefinfo{Sidnei e Maria}{SIDNEI; MARIA}{2009}
+{SIDNEI, R.; MARIA, V. de. \emph{Metodologia de pesquisa para a vida}. Rio de
+  Janeiro: Elsevier, 2009.}
+
+\bibitem[Silva, Marra e Correia 2009]{silva:incollection}
+\abntrefinfo{Silva, Marra e Correia}{SILVA; MARRA; CORREIA}{2009}
+{SILVA, J.; MARRA, M.; CORREIA, V. Applications of intelligent agents. In:
+  JENNINGS, N.~R.; WOOLDRIDGE, M.~J. (Ed.). \emph{Agent Technology:
+  Foundations, Applications, and Markets}. São Paulo: Springer, 2009. p.
+  3--28.}
+
+\bibitem[Silva \textit{et al.} 2012]{silva:artigo}
+\abntrefinfo{Silva \textit{et al.}}{SILVA \textit{et al.}}{2012}
+{SILVA, J. \textit{et al.} O equivalente em carbonato de c\'alcio dos
+  corretivos da acidez dos solos.
+\emph{Scientia Agricola}, v.~8, n.~2/3, p. 37--48, 2012.}
+
+\bibitem[Silveira 2006]{silveira:2006:manual_tcc}
+\abntrefinfo{Silveira}{SILVEIRA}{2006}
+{SILVEIRA, S.~J. da. \emph{Manual de Normalização para Apresentação de
+  Trabalho de Conclusão de Curso (TCC)}.
+Bambuí, 2006.}
+
+\bibitem[Wikip\'edia 2011]{wikipedia:2011:america_sul}
+\abntrefinfo{Wikip\'edia}{WIKIP\'EDIA}{2011}
+{WIKIP\'EDIA. \emph{Am\'erica do Sul}. 2011.
+Dispon{\'\i}vel em: \url{http://pt.wikipedia.org/wiki/América do Sul}. Acesso
+  em: 23/03/2011.}
+
+\end{thebibliography}

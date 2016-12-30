@@ -1,0 +1,146 @@
+%% =======================================================================================
+%% 
+%% RELATÓRIO TÉCNICO
+%% Criado a partir da classe abntex2, desenvolvida pelo 
+%% Centro de Pesquisa em Arquitetura da Informação (CPAI)
+%% 
+%% Arquivos de dados:   sty/configs.sty         % Configuração dos pacotes LaTeX
+%%                      sty/metadados_rt.sty    % METADADOS DO RELATÓRIO - PREENCHER!
+%%                      sty/dados_cpai.sty      % Informações institucionais CPAI / FUB
+%%                      sty/timbrado.sty        % Formatação do documento (layout)
+%%                      sty/vocabulario.sty     % Comandos LaTeX para facilitar digitação
+%% 
+%% =======================================================================================
+
+\documentclass[pdftex,12pt,oneside,a4paper,english,french,spanish,brazil]{abntex2}
+
+
+% ----------------------------------------------------------------------------------------
+% - PACOTES
+  \usepackage{sty/configs}                  % Pacotes utilizados
+  \usepackage{sty/metadados_rt}             % Dados do órgão / cliente
+  \usepackage{sty/dados_cpai}               % Dados do CPAI/FUB
+  \usepackage{sty/vocabulario}              % Vocabulário específico do projeto
+  \usepackage{sty/leiaute_rt}               % Definições de layout do documento
+
+% ----------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
+% - INÍCIO DO DOCUMENTO
+  \begin{document}
+      \begin{sloppypar}
+          
+          % Seleciona o idioma do documento (conforme pacotes do babel)
+            %\selectlanguage{english}
+            \selectlanguage{brazil}
+            
+          % Retira espaço extra obsoleto entre as frases.
+            \frenchspacing
+          
+          % ------------------------------------------------------------------------------
+          % - ESTRUTURA DO DOCUMENTO
+          % ------------------------------------------------------------------------------
+          % ------------------------------------------------------------------------------
+          % - PRÉ-TEXTUAL
+          % ------------------------------------------------------------------------------
+          \pretextual
+
+          % Capa
+            \input{pre-textual/capa}
+            \cleardoublepage
+          
+          % Revisões
+            \input{pre-textual/revisoes}
+            \cleardoublepage
+
+          % Filiação CPAI
+            \input{pre-textual/filiacao_cpai}
+            \cleardoublepage
+
+          % Inserir a ficha bibliografica
+            \input{pre-textual/ficha_catalografica}
+
+          % Sumarios
+            \vspace{1cm}
+            \tableofcontents
+            
+            \cleardoublepage
+            \vspace{1cm}
+            \listoffigures 
+            
+            \vspace{1cm}
+            \listoftables
+
+            \cleardoublepage
+            
+          % Lista de abreviaturas e siglas
+            \include{pre-textual/siglas}
+            
+          % ------------------------------------------------------------------------------
+          % - TEXTUAL
+          % ------------------------------------------------------------------------------
+          \textual
+          
+          % Introdução
+            \chapter*[Introdução]{Introdução}\label{cap:introducao}
+            \addcontentsline{toc}{chapter}{Introdução}
+            \input{textual/rt_introducao}
+
+          % Parte 1
+            \part{Primeira parte do relatório}\label{part:parte1}
+          
+          % Capítulo
+            \chapter[Referências de comandos]{Referências de comandos para simplificar a digitação}\label{cap:refcomandos}
+            \input{textual/refcomandos}
+
+          % Capítulo
+            \chapter{Título deste capítulo}\label{cap:capitulo1}
+            \input{textual/rt_cap1}
+          
+          % Capítulo
+            \chapter{Esse capítulo também precisa de título}\label{cap:capitulo2}
+            \input{textual/rt_cap2}
+          
+          % Considerações Finais
+            \chapter*[Considerações finais]{Considerações finais}\label{cap:consideracoesfinais}
+            \addcontentsline{toc}{chapter}{Considerações finais}
+            \input{textual/rt_conclusao}
+          
+          % Fechamento
+            \input{textual/fechamento}
+
+          % ------------------------------------------------------------------------------
+          % - PÓS-TEXTUAL
+          % ------------------------------------------------------------------------------
+          \postextual          
+        
+          % Referências bibliográficas
+            \cleardoublepage
+            \bibliography{bib/rt}
+        
+          % Glossário
+            %\glossary              % Consulte o manual da classe abntex2 para orientações sobre o glossário.
+
+          % Apêndices
+            %\part*{Apêndices}
+            %\begin{apendicesenv}
+
+                %\chapter{Título do Apêndice}\label{apend:apendice1}
+                %\input{pos-textual/apend01}
+
+            %\end{apendicesenv}
+                
+          % Anexos
+            \part*{Anexos}
+            \begin{anexosenv}
+
+                \chapter{Qual o título desse anexo?}\label{anex:anex01}
+                \input{pos-textual/anex01}
+
+            \end{anexosenv}
+          
+          % Índice remissimo
+            \printindex
+
+    \end{sloppypar}
+\end{document}
